@@ -1,0 +1,398 @@
+
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+    .toolbar {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .fecha-label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .fecha-select {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    thead th {
+        background-color: #ababab;
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #000000;
+    }
+    
+    tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+    }
+    
+    /* Estilo para la fila del grupo */
+    tbody .group {
+        background-color: #a8a8a8c7;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 2px solid #ddd;
+        cursor: pointer;
+    }
+    
+    /* "+" dentro de un cuadrado */
+    .cuadrado {
+        width: 11px;
+        height: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #6f95ae;
+        margin-right: 12px;
+        background-color: #afd9ef;
+    }
+    
+    .signo {
+        font-size: 14px;
+        font-weight: bold;
+        color: #050506;
+    }
+    
+    /* Estilo para el contenido de la fila del grupo */
+    .group-content {
+        display: flex;
+        align-items: center;
+    }
+    
+    tbody tr:hover {
+        background-color: #f9fd7eac;
+    }
+    
+    .data-row {
+        display: none; 
+    }
+    
+    .registro-fijo {
+        position: fixed;
+        bottom: 10px;
+        left: 150px;
+        font-weight: bold;
+        background-color: #f5f8fa;
+        padding: 10px;
+        border: 1px solid #005ec8;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        font-size: 13px;
+    }
+    
+    .button {
+        padding: 5px 10px;
+        margin-left: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: relative;
+        transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+    }
+    
+    .button:hover {
+        color: #000000af;
+        background-color: #00b368;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.806); /* Aumenta el desplazamiento y la opacidad de la sombra */
+    
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+        top: 100%; 
+        left: 0;
+        z-index: 1000;
+    }
+    
+    .dropdown-item {
+        display: block;
+        padding: 5px 0;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #f1f1f1;
+    }
+    
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(5px);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column; 
+        min-width: 300px;
+    }
+    
+    .table-container {
+        margin-top: 20px; 
+    }
+    
+    .close-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .button-group {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 15px; 
+    }
+    
+    .button-group button {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; 
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+    }
+    
+    .button-group button:hover{
+        transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+    
+    }
+    
+    .icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .radio-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .tc-container {
+        margin-top: 10px;
+    }
+    
+    .tc-input {
+        width: 100px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    
+    .filter-section {
+        margin-bottom: 20px;
+    }
+    
+    .filter-section label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .date-range, .amount-range {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    input[type="date"], input[type="number"], input[type="text"], select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    /* Botón cerrar */
+    .close-btn {
+        background-color: #f44336c2;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+    }
+    
+    .close-btn:hover {
+        color: #000000;
+        background-color: #d32f2f;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.81); /* Aumenta el desplazamiento y la opacidad de la sombra */
+    
+    }
+    
+    .sucursal-list, .operacion-list {
+        margin-bottom: 0px;
+    }
+    
+    .sucursal-list input[type="checkbox"], .operacion-list input[type="checkbox"] {
+        margin-right: 0px;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #table-modal-consulta {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0; 
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        justify-content: flex-end; 
+        align-items: center;
+    }
+    
+    #table-modal-consulta .modal-content {
+        background-color: #f4f4f9; 
+        border-radius: 10px;
+        width: 600px; 
+        padding: 20px;
+        margin-right: 50px; 
+    }
+    
+    #table-modal-consulta .filter-section {
+        margin-bottom: 25px;
+    }
+    
+    #table-modal-consulta .filter-section label {
+        font-weight: bold;
+        color: #4a4a4a; 
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    #table-modal-consulta .date-range,
+    #table-modal-consulta .amount-range {
+        display: flex;
+        flex-direction: column;
+        gap: 12px; 
+    }
+    
+    #table-modal-consulta input[type="date"],
+    #table-modal-consulta input[type="number"],
+    #table-modal-consulta input[type="text"],
+    #table-modal-consulta select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    #table-modal-consulta input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    #table-modal-consulta .close-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    #table-modal-consulta .close-btn:hover {
+        background-color: #6bb300;
+    }
+    
+    #table-modal-consulta .operacion-list {
+        margin-bottom: 20px;
+    }
+    
+    #table-modal-consulta .amount-range select {
+        background-color: #f0f0f0; 
+    }
+    
+    #consulta-btn {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+    
+    }
+    
+    #consulta-btn:hover{
+        transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+    
+    }
+    
+    
+    
+    
+    
+    
+    

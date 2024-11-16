@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 15px;
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 20px; 
+    background-color: rgba(158, 155, 155, 0.502); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+header {
+    background-image: url();
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    color: rgb(3, 57, 114);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon img {
+    width: 80px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.buscar-cliente {
+    background-color: #0647576b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fffefee4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+
+}
+
+.buscar-cliente:hover {
+    background-color: #00ccffa0;
+}
+
+.buscar-cliente:active{
+    transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+
+}
+
+h2.parametros-busqueda,
+h2.rango-fechas {
+    text-align: center; 
+    width: 100%; 
+    margin: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    flex-basis: 160px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], select, input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn {
+    background-color: #6cc1a294;
+    color: rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+
+}
+.search-btn:hover {
+    background-color:  #6200ff84;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.539); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+
+
+
+.clear-btn {
+    background-color: #d9544fa6;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+
+}
+
+.clear-btn:hover{
+    background-color: #ff0000df;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.538); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.611);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+   /* border: 1px solid #00000053;*/
+}
+
+table th {
+    background-color: #263d56;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.date-input-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    width: fit-content; 
+}
+
+.icono-fecha {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+
+input[type="date"] {
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 200px;
+}
+
+.date-range .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.date-range .form-row input[type="date"] {
+    max-width: 150px;
+    margin-left: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.atributos-adicionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.atributos-adicionales .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
+    margin-bottom: 15px;
+    width: 100%; 
+}
+
+.atributos-adicionales .form-row label {
+    width: 160px; 
+    font-weight: bold;
+}
+
+.atributos-adicionales .form-row input[type="text"], 
+.atributos-adicionales .form-row input[type="date"],
+.atributos-adicionales .form-row select {
+    width: 100%;
+    max-width: 300px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.atributos-adicionales h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.client-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.client-details .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.client-details .form-row label {
+    width: 160px; 
+    font-weight: bold;
+}
+
+.client-details .form-row input[type="text"], 
+.client-details .form-row input[type="date"],
+.client-details .form-row select {
+    width: 100%;
+    max-width: 300px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; 
+}
+
+.client-details h2 {
+    text-align: center; 
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+}
+
+
+.button-blue {
+    background-color: #0647576b;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+
+}
+
+.button-blue:hover {
+    background-color: #ffb7007f
+}
+
+.button-blue:active{
+    transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+
+}

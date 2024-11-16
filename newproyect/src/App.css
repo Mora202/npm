@@ -1,0 +1,101 @@
+/* src/App.css */
+
+/* Contenedor general */
+.app-container {
+  display: flex;
+  position: relative;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 200px;
+  background-color: #333333;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200px; /* Escondido por defecto */
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0; /* Mostrar el menú cuando está abierto */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #444;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 0;
+  padding: 20px;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+  margin-left: 200px; /* Desplaza el contenido cuando el menú está abierto */
+}
+
+/* src/App.css */
+
+/* Botón de cierre "X" dentro del menú */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: red;
+}
+
+/* Contenido principal */
+.content.shifted {
+  margin-left: 200px; /* Desplaza el contenido cuando el menú está abierto */
+}
+
+/* Estilo para el submenú */
+.submenu {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding-left: 20px; /* Aumenta el padding para desplazarlo a la derecha */
+  margin: 0;
+}
+
+.submenu li {
+  cursor: pointer;
+  margin: 5px 0;
+  padding-left: 35px; /* Ajusta para desplazar los elementos del submenú un poco más */
+}
+
+.submenu li:hover {
+  color: #1ee9e6d2;
+}
+
