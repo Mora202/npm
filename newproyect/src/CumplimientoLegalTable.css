@@ -49,7 +49,7 @@ h2 {
 }
 
 .tablinks.active {
-    background-color: #3498db;
+    background-color: #5edb34;
     color: #fff;
 }
 
@@ -59,7 +59,7 @@ h2 {
 }
 
 #sector, #perfiles, #matriz, #campos, #adicional, #transaccion {
-    display: block; /* Mantén esta clase en React para el estado dinámico */
+    display: block; 
 }
 
 .scrollable-table {
@@ -135,4 +135,362 @@ input[type="number"], input[type="date"], input[type="text"], select {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     margin-top: 20px;
+}
+
+
+
+#perfiles {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .perfiles-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .perfiles-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perfiles-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .perfiles-title {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .perfiles-content {
+    padding: 10px;
+  }
+  
+  .perfiles-envios {
+    overflow-x: auto;
+  }
+  
+  .perfiles-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .perfiles-table th, 
+  .perfiles-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .perfiles-table th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .input-envios, 
+  .input-alertas {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+
+#adicional {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Títulos */
+  #adicional h2 {
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  /* Secciones con efecto de cuadro */
+  .alertas-section,
+  .operaciones-analisis-section,
+  .operaciones-relevantes-section,
+  .captura-beneficiario-section,
+  .propietario-real-section,
+  .procedencia-destino-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #003366; /* Borde lateral */
+  }
+  
+  /* Estilos de subtítulos */
+  .alertas-section h3,
+  .operaciones-analisis-section h3,
+  .operaciones-relevantes-section h3,
+  .captura-beneficiario-section h3,
+  .propietario-real-section h3,
+  .procedencia-destino-section h3 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los checkboxes y etiquetas */
+  label {
+    display: block;
+    margin: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+  }
+  
+  /* Inputs numéricos en línea */
+  .inputs-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .inputs-inline input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 120px;
+    text-align: center;
+  }
+  
+  /* Estilos para la tabla de análisis */
+  .analisis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .analisis-table th,
+  .analisis-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .analisis-table th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .operaciones-relevantes-section:hover,
+  .captura-beneficiario-section:hover,
+  .propietario-real-section:hover,
+  .procedencia-destino-section:hover {
+    background-color: rgba(11, 61, 145, 0.08);
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+.configuracion-operaciones-ilicitas {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .configuracion-operaciones-ilicitas h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .operaciones-relevantes-section,
+  .captura-beneficiario-section,
+  .propietario-real-section,
+  .procedencia-destino-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #003366;
+  }
+  
+  .operaciones-relevantes-section h3,
+  .captura-beneficiario-section h3,
+  .propietario-real-section h3,
+  .procedencia-destino-section h3 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+  }
+  
+  .inputs-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .inputs-inline input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .operaciones-relevantes-section:hover,
+  .captura-beneficiario-section:hover,
+  .propietario-real-section:hover,
+  .procedencia-destino-section:hover {
+    background-color: rgba(11, 61, 145, 0.08);
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+
+  /* Contenedor principal */
+#transaccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+/* Botones superiores e inferiores */
+.botones-superiores, .botones-inferiores {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.btn-desplegable {
+  width: 100%;
+  padding: 10px;
+  background: #002855;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+}
+
+.btn-desplegable:hover {
+  background: #28ad8a;
+}
+
+/* Campos de formulario */
+.campo {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 10px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="date"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Botón Consultar */
+.consultar-btn {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  background: #002855;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 20px; 
+}
+
+/* Botones inferiores */
+.botones-inferiores {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+
+.btn-ver-transacciones {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  background: #d3d3d3;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-ver-transacciones:hover {
+  background: #b3b3b3;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

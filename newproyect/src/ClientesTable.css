@@ -1,263 +1,152 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url();
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 15px;
-}
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: rgba(192, 192, 192, 0.581);
+/* Estilos únicos para ClientesTable */
+.clientes-table-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(152, 187, 152, 0.456);
-}
-
-.header {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .clientes-table-header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.header .icon img {
-    width: 50px;
-    height: 50px;
-}
-
-.header .title {
-    margin-left: 15px;
-}
-
-.header .title h1 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.header .title a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-}
-
-.client-data {
-    margin-bottom: 20px;
-}
-
-.client-data h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.data-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.data-row label {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.documents-section {
-    margin-top: 20px;
-}
-
-.documents-section table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.documents-section th, 
-.documents-section td {
     padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #054e7862;
-}
-
-.documents-section th {
-    /*background-color: #f4f4f47d;*/
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .clientes-table-header img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .clientes-table-title {
+    font-size: 20px;
     font-weight: bold;
-}
-
-.documents-section input[type="radio"] {
-    margin-right: 5px;
-}
-
-.documents-section input[type="date"] {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-}
-
-.documents-section button {
-    background-color: #f9dc7f;
-    color: rgb(0, 0, 0);
+  }
+  
+  .clientes-table-documents {
+    margin-top: 20px;
+  }
+  
+  .clientes-table-documents h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .consultar-button button {
+    background: #2196F3;
+    color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 5px;
-}
-
-.documents-section button:hover {
-    background-color: #a5f8c1d2;
-}
-
-.documents-section button:active {
-    transform: scale(0.98);
-}
-
-.header .icon {
+    transition: background 0.3s;
+  }
+  
+  .consultar-button button:hover {
+    background: #1976D2;
+  }
+  
+  .clientes-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .clientes-table th, .clientes-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .clientes-table th {
+    background: #2C3E50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .doc-checkbox {
     display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .date-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px; 
-    margin-right: 15px;
-}
-
-.header .icon img {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain; 
-}
-
-/* cuadro de fecha */
-.date-container {
-    display: flex;
-    align-items: center;
-}
-
-.date-icon {
+    gap: 5px;
+  }
+  
+  .date-icon {
     width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-/* checkbox */
-.doc-checkbox {
-   /* display: flex;*/
-    align-items: center;
-}
-/*tamaño del checkbox*/
-.doc-checkbox-input {
-    margin-right: 10px;
-    transform: scale(1.2); 
-}
-
-/* Modal */
-.modal {
-    display: none;
+  }
+  
+  .modal {
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-image: url();
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-.modal-content {
-    background-image: url();
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 15% auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
     padding: 20px;
-    border: 1px solid #3738368f;
-    width: 50%;
     border-radius: 10px;
-    text-align: center;
-}
-
-.close {
-    color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover, .close:focus {
-    color: rgb(253, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Estilo Modal */
-.modal h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.modal-table {
+    width: 400px;
+  }
+  
+  .modal-table {
     width: 100%;
-    margin: 0 auto;
     border-collapse: collapse;
-}
-/* texto en ambas columnas */
-.modal-table th, 
-.modal-table td {
-    padding: 15px;
-    border-bottom: 1px solid #5b5a5a75;
-    text-align: center; 
-}
-
-.modal-table th {
-    font-weight: bold;
-    text-align: center;
-}
-
-.modal-table td:nth-child(1) {
-    text-align: center;
-    padding-right: 50px; 
-}
-
-.modal-table td:nth-child(2) {
-    text-align: center;
-    padding-left: 50px; 
-}
-
-.modal-table input {
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-}
-/* Botón Consultar */
-.consultar-button {
-    text-align: right; 
-    margin-top: -10px;
-}
-
-.consultar-button button {
-    background-color: #f9dd7f;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+  }
+  
+  .modal-table th, .modal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .close {
+    font-size: 24px;
     cursor: pointer;
-}
-
-.consultar-button button:hover {
-    background-color: #eaf8a5ac;
-}
-
-.consultar-button button:active {
-    transform: scale(0.98);
-}
+    float: right;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button.alta {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  button.descargar {
+    background: #2196F3;
+    color: white;
+  }
+  
+  button.eliminar {
+    background: #F44336;
+    color: white;
+  }
+  

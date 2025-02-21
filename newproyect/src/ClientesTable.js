@@ -1,4 +1,4 @@
-// src/ClientesTable.js
+
 import React, { useState } from 'react';
 import './ClientesTable.css';
 
